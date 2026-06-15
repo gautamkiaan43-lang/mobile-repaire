@@ -1,0 +1,138 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("admins")
+}
+
+enum BookingStatus {
+  Pending
+  Confirmed
+  In_Progress @map("In Progress")
+  Completed
+  Cancelled
+  Rejected
+}
+
+enum CreatedSource {
+  website
+  admin
+}
+
+model Booking {
+  id             Int           @id @default(autoincrement())
+  bookingNumber  String        @unique @map("booking_number") @db.VarChar(20)
+  customerName   String        @map("customer_name")
+  customerPhone  String        @map("customer_phone") @db.VarChar(50)
+  customerEmail  String        @map("customer_email")
+  deviceBrand    String        @map("device_brand") @db.VarChar(100)
+  deviceType     String        @map("device_type") @db.VarChar(100)
+  deviceModel    String        @map("device_model")
+  repairName     String        @map("repair_name")
+  partQuality    String?       @map("part_quality")
+  finalPrice     Decimal       @map("final_price") @db.Decimal(10, 2)
+  repairSnapshot Json          @map("repair_snapshot")
+  dateStr        DateTime      @map("date_str") @db.Date
+  timeSlot       String        @map("time_slot") @db.VarChar(20)
+  status         BookingStatus @default(Pending)
+  notes          String?       @db.Text
+  createdSource  CreatedSource @default(website) @map("created_source")
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+
+  notifications  Notification[]
+
+  @@index([customerName])
+  @@index([customerPhone])
+  @@index([customerEmail])
+  @@index([deviceModel])
+  @@index([dateStr, timeSlot])
+  @@index([status])
+  @@map("bookings")
+}
+
+enum DayName {
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Saturday
+  Sunday
+}
+
+model StoreHour {
+  id         Int      @id @default(autoincrement())
+  dayName    DayName  @unique @map("day_name")
+  openTime   DateTime @map("open_time") @db.Time
+  closeTime  DateTime @map("close_time") @db.Time
+  breakStart DateTime? @map("break_start") @db.Time
+  breakEnd   DateTime? @map("break_end") @db.Time
+  isClosed   Boolean  @default(false) @map("is_closed")
+
+  @@map("store_hours")
+}
+
+enum ExceptionType {
+  Closed
+  Custom_Hours @map("Custom Hours")
+}
+
+model ScheduleException {
+  id          Int           @id @default(autoincrement())
+  title       String
+  date        DateTime      @unique @db.Date
+  type        ExceptionType
+  customOpen  DateTime?     @map("custom_open") @db.Time
+  customClose DateTime?     @map("custom_close") @db.Time
+  active      Boolean       @default(true)
+  createdAt   DateTime      @default(now()) @map("created_at")
+
+  @@map("schedule_exceptions")
+}
+
+enum NotificationType {
+  booking
+  alert
+  system
+}
+
+model Notification {
+  id          Int              @id @default(autoincrement())
+  title       String
+  description String           @db.Text
+  type        NotificationType
+  bookingId   Int?             @map("booking_id")
+  booking     Booking?         @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+  isRead      Boolean          @default(false) @map("is_read")
+  createdAt   DateTime         @default(now()) @map("created_at")
+
+  @@map("notifications")
+}
+
+model Settings {
+  id                  Int      @id @default(1)
+  storeName           String   @default("MPC Repairs") @map("store_name")
+  storeEmail          String   @default("support@irepairexperts.com.au") @map("store_email")
+  storePhone          String   @default("+61 1300 473 724") @map("store_phone") @db.VarChar(50)
+  storeAddress        String   @default("168 Cavendish Road, Coorparoo QLD 4151") @map("store_address") @db.VarChar(500)
+  currency            String   @default("AUD ($)")
+  timezone            String   @default("Australia/Brisbane")
+  bookingSlotDuration Int      @default(90) @map("booking_slot_duration")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  @@map("settings")
+}

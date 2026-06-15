@@ -1,0 +1,609 @@
+{"level":"info","message":"Initializing MariaDB pool for host=localhost, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-12 18:51:17"}
+{"level":"info","message":"Initializing MariaDB pool for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-12 18:52:49"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-12 18:53:53"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-12 18:54:21"}
+{"level":"info","message":"Attempting to connect to Redis on 127.0.0.1:6379...","timestamp":"2026-06-12 18:54:21"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-12 18:54:21"}
+{"0":"c","1":"o","10":"O","11":"N","12":"N","13":"R","14":"E","15":"F","16":"U","17":"S","18":"E","19":"D","2":"n","20":" ","21":"1","22":"2","23":"7","24":".","25":"0","26":".","27":"0","28":".","29":"1","3":"n","30":":","31":"6","32":"3","33":"7","34":"9","4":"e","5":"c","6":"t","7":" ","8":"E","9":"C","level":"warn","message":"Redis error occurred:","timestamp":"2026-06-12 18:54:21"}
+{"0":"c","1":"o","10":"O","11":"N","12":"N","13":"R","14":"E","15":"F","16":"U","17":"S","18":"E","19":"D","2":"n","20":" ","21":"1","22":"2","23":"7","24":".","25":"0","26":".","27":"0","28":".","29":"1","3":"n","30":":","31":"6","32":"3","33":"7","34":"9","4":"e","5":"c","6":"t","7":" ","8":"E","9":"C","level":"warn","message":"Redis error occurred:","timestamp":"2026-06-12 18:54:22"}
+{"level":"warn","message":"Redis connection failed. Switching to in-memory fallback client.","timestamp":"2026-06-12 18:54:22"}
+{"level":"info","message":"GET /health - ::1","timestamp":"2026-06-12 18:54:59"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-12 18:58:50"}
+{"level":"info","message":"Attempting to connect to Redis on 127.0.0.1:6379...","timestamp":"2026-06-12 18:58:50"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-12 18:58:50"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-12 18:58:50"}
+{"0":"c","1":"o","10":"O","11":"N","12":"N","13":"R","14":"E","15":"F","16":"U","17":"S","18":"E","19":"D","2":"n","20":" ","21":"1","22":"2","23":"7","24":".","25":"0","26":".","27":"0","28":".","29":"1","3":"n","30":":","31":"6","32":"3","33":"7","34":"9","4":"e","5":"c","6":"t","7":" ","8":"E","9":"C","level":"warn","message":"Redis error occurred:","timestamp":"2026-06-12 18:58:50"}
+{"level":"info","message":"GET /health - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:50"}
+{"level":"info","message":"GET /api/v1/public/branches - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-25&branch_id=1 - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"POST /api/v1/auth/login - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"Admin logged in successfully: admin@mpcrepairs.com.au","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"Booking created successfully: BKG-0001","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::ffff:127.0.0.1","timestamp":"2026-06-12 18:58:51"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 12:02:45"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 12:02:45"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 12:02:45"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 12:02:46"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 12:03:57"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 12:03:58"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 12:03:58"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 12:03:58"}
+{"level":"info","message":"GET /health - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:03:58"}
+{"clientVersion":"7.8.0","code":"P2010","level":"error","message":"Health check failed: \nInvalid `prisma.$queryRaw()` invocation:\n\n\nRaw query failed. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10006ms\n    (pool connections: active=0 idle=0 limit=10)`","meta":{"driverAdapterError":{"cause":{"cause":"connect ECONNREFUSED 127.0.0.1:3306","code":45028,"kind":"mysql","message":"pool timeout: failed to retrieve a connection from pool after 10006ms\n    (pool connections: active=0 idle=0 limit=10)","originalCode":"45028","originalMessage":"pool timeout: failed to retrieve a connection from pool after 10006ms\n    (pool connections: active=0 idle=0 limit=10)","state":"HY000"},"name":"DriverAdapterError"}},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.$queryRaw()` invocation:\n\n\nRaw query failed. Code: `45028`. Message: `pool timeout: failed to retrieve a connection from pool after 10006ms\n    (pool connections: active=0 idle=0 limit=10)`\n    at zr.handleRequestError (D:\\KIAAN\\mobile-repair\\mobile-repair\\backend\\node_modules\\@prisma\\client\\runtime\\client.js:65:8286)\n    at zr.handleAndLogRequestError (D:\\KIAAN\\mobile-repair\\mobile-repair\\backend\\node_modules\\@prisma\\client\\runtime\\client.js:65:7581)\n    at zr.request (D:\\KIAAN\\mobile-repair\\mobile-repair\\backend\\node_modules\\@prisma\\client\\runtime\\client.js:65:7288)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async a (D:\\KIAAN\\mobile-repair\\mobile-repair\\backend\\node_modules\\@prisma\\client\\runtime\\client.js:75:6862)\n    at async D:\\KIAAN\\mobile-repair\\mobile-repair\\backend\\server.js:47:5","timestamp":"2026-06-13 12:04:18"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 12:09:45"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 12:09:45"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"GET /health - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"GET /api/v1/public/branches - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-25&branch_id=1 - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"POST /api/v1/auth/login - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"Admin logged in successfully: admin@mpcrepairs.com.au","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"Booking created successfully: BKG-0002","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:09:46"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 12:10:06"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 12:10:06"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 12:10:06"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 12:10:06"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 12:11:44"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 12:11:44"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 12:18:58"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 12:19:00"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 12:24:58"}
+{"level":"info","message":"Admin logged in successfully: admin@mpcrepairs.com.au","timestamp":"2026-06-13 12:25:04"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 12:25:24"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 12:25:25"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 12:25:25"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 12:25:26"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 12:25:28"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 12:25:30"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 12:27:22"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 12:27:23"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 12:27:24"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 12:27:24"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 12:28:54"}
+{"level":"info","message":"GET /api/v1/admin/sliders - ::1","timestamp":"2026-06-13 12:28:54"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 12:28:55"}
+{"level":"info","message":"GET /api/v1/admin/sliders - ::1","timestamp":"2026-06-13 12:28:59"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 12:49:07"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 12:49:26"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 12:55:59"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 12:55:59"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 12:55:59"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 12:55:59"}
+{"level":"info","message":"GET /health - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:55:59"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-25 - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"POST /api/v1/auth/login - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"Admin logged in successfully: admin@mpcrepairs.com.au","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"Booking created successfully: BKG-0003","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::ffff:127.0.0.1","timestamp":"2026-06-13 12:56:00"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"GET /health - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-25 - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"POST /api/v1/auth/login - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"Admin logged in successfully: admin@mpcrepairs.com.au","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"Booking created successfully: BKG-0004","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:00:38"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 13:03:09"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 13:03:09"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 13:03:09"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 13:03:09"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 13:05:25"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 13:05:25"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 13:05:25"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 13:05:25"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 13:06:06"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 13:06:06"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 13:08:15"}
+{"level":"info","message":"Admin logged in successfully: admin@mpcrepairs.com.au","timestamp":"2026-06-13 13:08:15"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:08:16"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:08:16"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:08:16"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:08:16"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:08:16"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:08:16"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 13:08:24"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 13:08:24"}
+{"level":"info","message":"GET /api/v1/admin/store-hours - ::1","timestamp":"2026-06-13 13:08:30"}
+{"level":"info","message":"GET /api/v1/admin/store-hours - ::1","timestamp":"2026-06-13 13:08:30"}
+{"level":"info","message":"GET /api/v1/admin/exceptions - ::1","timestamp":"2026-06-13 13:08:30"}
+{"level":"info","message":"GET /api/v1/admin/exceptions - ::1","timestamp":"2026-06-13 13:08:30"}
+{"level":"info","message":"GET /api/v1/admin/settings - ::1","timestamp":"2026-06-13 13:11:19"}
+{"level":"info","message":"GET /api/v1/admin/settings - ::1","timestamp":"2026-06-13 13:11:19"}
+{"level":"info","message":"PUT /api/v1/admin/settings - ::1","timestamp":"2026-06-13 13:13:38"}
+{"level":"info","message":"GET /api/v1/admin/settings - ::1","timestamp":"2026-06-13 13:13:38"}
+{"level":"info","message":"PUT /api/v1/admin/change-password - ::1","timestamp":"2026-06-13 13:13:57"}
+{"level":"info","message":"Admin password changed successfully for admin ID: 1","timestamp":"2026-06-13 13:13:57"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:14:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:14:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:14:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:14:10"}
+{"level":"info","message":"POST /api/v1/auth/logout - ::1","timestamp":"2026-06-13 13:14:15"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"Admin logged in successfully: admin@mpcrepairs.com.au","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:14:29"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 13:16:05"}
+{"level":"info","message":"GET /health - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-25 - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"POST /api/v1/auth/login - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:28"}
+{"level":"info","message":"Admin logged in successfully: admin@gmail.com","timestamp":"2026-06-13 13:16:29"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:29"}
+{"level":"info","message":"Booking created successfully: BKG-0005","timestamp":"2026-06-13 13:16:29"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:29"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:29"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::ffff:127.0.0.1","timestamp":"2026-06-13 13:16:29"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 13:17:21"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 13:17:24"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 13:17:32"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 13:17:38"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"Admin logged in successfully: admin@gmail.com","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:17:50"}
+{"level":"info","message":"GET /api/v1/admin/settings - ::1","timestamp":"2026-06-13 13:18:01"}
+{"level":"info","message":"GET /api/v1/admin/settings - ::1","timestamp":"2026-06-13 13:18:01"}
+{"level":"info","message":"PUT /api/v1/admin/change-password - ::1","timestamp":"2026-06-13 13:18:24"}
+{"level":"info","message":"Admin password changed successfully for admin ID: 2","timestamp":"2026-06-13 13:18:24"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:18:31"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:18:31"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:18:31"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:18:31"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:18:39"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:18:39"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:18:39"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 13:18:39"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 13:18:39"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 13:18:39"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 14:05:39"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 14:05:39"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:05:46"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:05:48"}
+{"level":"info","message":"GET /api/v1/admin/store-hours - ::1","timestamp":"2026-06-13 14:05:49"}
+{"level":"info","message":"GET /api/v1/admin/store-hours - ::1","timestamp":"2026-06-13 14:05:49"}
+{"level":"info","message":"GET /api/v1/admin/exceptions - ::1","timestamp":"2026-06-13 14:05:49"}
+{"level":"info","message":"GET /api/v1/admin/exceptions - ::1","timestamp":"2026-06-13 14:05:49"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:14"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:14"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:14"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:14"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:06:30"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:06:30"}
+{"level":"info","message":"GET /api/v1/admin/store-hours - ::1","timestamp":"2026-06-13 14:06:33"}
+{"level":"info","message":"GET /api/v1/admin/store-hours - ::1","timestamp":"2026-06-13 14:06:33"}
+{"level":"info","message":"GET /api/v1/admin/exceptions - ::1","timestamp":"2026-06-13 14:06:33"}
+{"level":"info","message":"GET /api/v1/admin/exceptions - ::1","timestamp":"2026-06-13 14:06:33"}
+{"level":"info","message":"GET /api/v1/admin/settings - ::1","timestamp":"2026-06-13 14:06:35"}
+{"level":"info","message":"GET /api/v1/admin/settings - ::1","timestamp":"2026-06-13 14:06:35"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:38"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:38"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:39"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:39"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:06:45"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:06:45"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:51"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:51"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:51"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:51"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:06:53"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:06:53"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:56"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:56"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:06:56"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:06:56"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:07:05"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:07:05"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:11:42"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:11:42"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:11:43"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:11:43"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:11:46"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:11:46"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/2/status - ::1","timestamp":"2026-06-13 14:11:57"}
+{"level":"info","message":"Booking BKG-0002 status updated to Rejected","timestamp":"2026-06-13 14:11:57"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:11:57"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/5/status - ::1","timestamp":"2026-06-13 14:12:00"}
+{"level":"info","message":"Booking BKG-0005 status updated to Rejected","timestamp":"2026-06-13 14:12:00"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:12:00"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:12:18"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:12:18"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:12:18"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:12:18"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/4/status - ::1","timestamp":"2026-06-13 14:12:32"}
+{"level":"info","message":"Booking BKG-0004 status updated to Rejected","timestamp":"2026-06-13 14:12:32"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:12:32"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/3/status - ::1","timestamp":"2026-06-13 14:12:36"}
+{"level":"info","message":"Booking BKG-0003 status updated to Rejected","timestamp":"2026-06-13 14:12:36"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:12:36"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:12:43"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:12:43"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:12:43"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:12:43"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/1/status - ::1","timestamp":"2026-06-13 14:13:04"}
+{"level":"info","message":"Booking BKG-0001 status updated to Rejected","timestamp":"2026-06-13 14:13:04"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:13:04"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:13:04"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:13:08"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:13:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:13:09"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:13:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:13:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:13:09"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:13:30"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:13:30"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:14:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:14:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:14:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:14:11"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-04-26&endDate=2026-06-06 - ::1","timestamp":"2026-06-13 14:14:55"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:14:55"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:14:57"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:14:57"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:14:58"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-06-28&endDate=2026-08-08 - ::1","timestamp":"2026-06-13 14:14:58"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:04"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:15:04"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:05"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-04-26&endDate=2026-06-06 - ::1","timestamp":"2026-06-13 14:15:05"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-03-29&endDate=2026-05-09 - ::1","timestamp":"2026-06-13 14:15:06"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:06"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:06"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-03-01&endDate=2026-04-11 - ::1","timestamp":"2026-06-13 14:15:06"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:08"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-03-29&endDate=2026-05-09 - ::1","timestamp":"2026-06-13 14:15:08"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:08"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-04-26&endDate=2026-06-06 - ::1","timestamp":"2026-06-13 14:15:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:15:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-06-28&endDate=2026-08-08 - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-07-26&endDate=2026-09-05 - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-08-30&endDate=2026-10-10 - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-09-27&endDate=2026-11-07 - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-11-01&endDate=2026-12-12 - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:10"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-11-29&endDate=2027-01-09 - ::1","timestamp":"2026-06-13 14:15:11"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:11"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:20"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-11-01&endDate=2026-12-12 - ::1","timestamp":"2026-06-13 14:15:20"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-09-27&endDate=2026-11-07 - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-08-30&endDate=2026-10-10 - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-07-26&endDate=2026-09-05 - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-06-28&endDate=2026-08-08 - ::1","timestamp":"2026-06-13 14:15:23"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:24"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:15:24"}
+{"level":"info","message":"GET /api/v1/admin/search?q=test - ::1","timestamp":"2026-06-13 14:15:37"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:15:40"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:15:40"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:50"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:15:50"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:50"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:15:50"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:15:53"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:53"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:15:53"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:15:53"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:15:53"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:15:53"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:16:14"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:16:14"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:16:14"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:16:14"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-23 - ::1","timestamp":"2026-06-13 14:17:03"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-24 - ::1","timestamp":"2026-06-13 14:17:09"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-22 - ::1","timestamp":"2026-06-13 14:17:10"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-17 - ::1","timestamp":"2026-06-13 14:17:11"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-19 - ::1","timestamp":"2026-06-13 14:17:13"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 14:17:16"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:17:18"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-22 - ::1","timestamp":"2026-06-13 14:17:20"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:17:39"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-14 - ::1","timestamp":"2026-06-13 14:17:43"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 14:17:46"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-13 14:19:06"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-13 14:19:07"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-13 14:19:07"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-13 14:19:07"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:20:36"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:20:36"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:20:36"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:20:36"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:20:45"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:20:45"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:20:45"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:20:45"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-14 - ::1","timestamp":"2026-06-13 14:21:06"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 14:21:09"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-18 - ::1","timestamp":"2026-06-13 14:21:18"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-17 - ::1","timestamp":"2026-06-13 14:21:19"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-19 - ::1","timestamp":"2026-06-13 14:21:21"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 14:21:56"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 14:22:11"}
+{"level":"info","message":"Booking created successfully: BKG-0006","timestamp":"2026-06-13 14:22:11"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:22:19"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:22:19"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:22:19"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 14:22:19"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 14:22:19"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 14:22:19"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:22:37"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 14:22:37"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:24:15"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:24:15"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:24:15"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:24:15"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:31:15"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:31:15"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:32:34"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:32:34"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:32:34"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:32:34"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:32:45"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:32:45"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:32:45"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:32:45"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:46:11"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:46:11"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:46:11"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:46:11"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:46:20"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:46:21"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:46:21"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:46:21"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:56:10"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:56:10"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:56:11"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:56:11"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-14 - ::1","timestamp":"2026-06-13 14:56:31"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 14:56:33"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 14:56:39"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:59:40"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:59:40"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:59:40"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:59:40"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:59:46"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:59:46"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 14:59:46"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 14:59:46"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 14:59:57"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:00:09"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:00:14"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:00:21"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:00:45"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 15:03:52"}
+{"level":"info","message":"Admin logged in successfully: admin@gmail.com","timestamp":"2026-06-13 15:03:53"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:03:54"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 15:03:55"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:04:55"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:04:55"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:04:55"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:04:55"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-16 - ::1","timestamp":"2026-06-13 15:05:09"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:05:13"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:05:14"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:05:55"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:05:55"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:05:55"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:05:55"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:06:39"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:06:39"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:06:39"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:06:39"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-16 - ::1","timestamp":"2026-06-13 15:06:56"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:06:58"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:07:04"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:07:17"}
+{"level":"info","message":"Booking created successfully: BKG-0007","timestamp":"2026-06-13 15:07:18"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:07:52"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:07:52"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:07:52"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:07:52"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 15:08:09"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:08:26"}
+{"level":"info","message":"Booking created successfully: BKG-0008","timestamp":"2026-06-13 15:08:26"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:15:27"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:15:27"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:15:27"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:15:27"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 15:15:42"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:17:43"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:17:43"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:17:43"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:17:43"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:17:48"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:17:48"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:17:48"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:17:48"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-13 15:17:58"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-13 15:20:29"}
+{"level":"info","message":"Booking created successfully: BKG-0009","timestamp":"2026-06-13 15:20:29"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-13 15:22:00"}
+{"level":"info","message":"Admin logged in successfully: admin@gmail.com","timestamp":"2026-06-13 15:22:01"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 15:22:01"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:22:01"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 15:22:01"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-13 15:22:01"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:22:01"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-13 15:22:01"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:22:05"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:22:05"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/9/status - ::1","timestamp":"2026-06-13 15:22:16"}
+{"level":"info","message":"Booking BKG-0009 status updated to Rejected","timestamp":"2026-06-13 15:22:16"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:22:16"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/8/status - ::1","timestamp":"2026-06-13 15:22:20"}
+{"level":"info","message":"Booking BKG-0008 status updated to Rejected","timestamp":"2026-06-13 15:22:20"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:22:20"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/7/status - ::1","timestamp":"2026-06-13 15:22:23"}
+{"level":"info","message":"Booking BKG-0007 status updated to Rejected","timestamp":"2026-06-13 15:22:23"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:22:23"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/6/status - ::1","timestamp":"2026-06-13 15:22:26"}
+{"level":"info","message":"Booking BKG-0006 status updated to Rejected","timestamp":"2026-06-13 15:22:27"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:22:27"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/9/status - ::1","timestamp":"2026-06-13 15:22:35"}
+{"level":"info","message":"Booking BKG-0009 status updated to Confirmed","timestamp":"2026-06-13 15:22:35"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:22:35"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:27:30"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:27:30"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-13 15:27:30"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-13 15:27:30"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:28:05"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:28:05"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:28:05"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:28:05"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:34:26"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:34:26"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:34:26"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:34:26"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:34:34"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:34:34"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:34:34"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:34:34"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:38:24"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:38:24"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:38:24"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:38:24"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:38:34"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:38:34"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:38:34"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:38:34"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:41:55"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:41:55"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:41:55"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:41:55"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:42:05"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:42:05"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:42:05"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:42:05"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:46:58"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:46:58"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:46:58"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:46:58"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:56:51"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:56:51"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 15:56:51"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 15:56:51"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 16:45:23"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-13 16:45:25"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 16:47:11"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 16:47:11"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-13 16:47:12"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-13 - ::1","timestamp":"2026-06-13 16:47:12"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-15 11:42:07"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-15 11:42:07"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-15 11:42:08"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-15 11:42:08"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-15 11:42:40"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-15 11:42:40"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-15 11:42:41"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-15 11:42:41"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-15 11:51:03"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-15 11:51:03"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-15 11:51:13"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-15 11:52:09"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-15 11:52:09"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-15 11:52:09"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-15 11:52:19"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-15 11:52:19"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-15 11:52:29"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-15 12:04:08"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-15 12:04:08"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-15 12:04:08"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-15 12:04:08"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-15 13:17:50"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-15 13:17:50"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-15 13:17:50"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-15 13:17:50"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-15 13:17:57"}
+{"level":"info","message":"GET /api/v1/public/catalog - ::1","timestamp":"2026-06-15 13:17:58"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-15 13:18:09"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-15 13:18:09"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-15 13:18:10"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-15 13:18:10"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-16 - ::1","timestamp":"2026-06-15 13:18:26"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-15 13:18:33"}
+{"level":"info","message":"Initializing PrismaMariaDb adapter for host=127.0.0.1, port=3306, database=mpc_repairs, user=root","timestamp":"2026-06-15 13:18:34"}
+{"level":"info","message":"No REDIS_URL configured. Using in-memory fallback.","timestamp":"2026-06-15 13:18:34"}
+{"level":"info","message":"Successfully loaded catalog.json into memory.","timestamp":"2026-06-15 13:18:34"}
+{"level":"info","message":"MPC Repairs Backend running on port 5000","timestamp":"2026-06-15 13:18:34"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-15 13:18:46"}
+{"level":"info","message":"Booking created successfully: BKG-0015","timestamp":"2026-06-15 13:18:47"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-15 13:19:14"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-15 13:19:14"}
+{"level":"info","message":"GET /api/v1/public/settings - ::1","timestamp":"2026-06-15 13:19:14"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-15 - ::1","timestamp":"2026-06-15 13:19:14"}
+{"level":"info","message":"GET /api/v1/public/slots?date=2026-06-16 - ::1","timestamp":"2026-06-15 13:19:46"}
+{"level":"info","message":"POST /api/v1/public/bookings - ::1","timestamp":"2026-06-15 13:19:56"}
+{"level":"info","message":"Booking created successfully: BKG-0016","timestamp":"2026-06-15 13:19:56"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-15 13:20:11"}
+{"level":"info","message":"Admin logged in successfully: admin@gmail.com","timestamp":"2026-06-15 13:20:12"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-15 13:20:12"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-15 13:20:12"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-15 13:20:12"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-15 13:20:12"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-15 13:20:12"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-15 13:20:12"}
+{"level":"info","message":"PUT /api/v1/admin/bookings/15/reschedule - ::1","timestamp":"2026-06-15 13:20:19"}
+{"level":"info","message":"Booking BKG-0015 rescheduled to 2026-06-16 at 11:40 AM","timestamp":"2026-06-15 13:20:19"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-15 13:20:19"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-15 13:20:19"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-15 13:20:37"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-15 13:20:37"}
+{"level":"info","message":"POST /api/v1/auth/login - ::1","timestamp":"2026-06-15 13:23:08"}
+{"level":"info","message":"Admin logged in successfully: admin@gmail.com","timestamp":"2026-06-15 13:23:09"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-15 13:23:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-15 13:23:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-15 13:23:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/calendar?startDate=2026-05-31&endDate=2026-07-11 - ::1","timestamp":"2026-06-15 13:23:09"}
+{"level":"info","message":"GET /api/v1/admin/notifications - ::1","timestamp":"2026-06-15 13:23:09"}
+{"level":"info","message":"GET /api/v1/admin/dashboard/stats - ::1","timestamp":"2026-06-15 13:23:09"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-15 13:23:12"}
+{"level":"info","message":"GET /api/v1/admin/bookings - ::1","timestamp":"2026-06-15 13:23:12"}
