@@ -11,54 +11,26 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// ==================== CORS CONFIG ====================
-const allowedOrigins = [
-  'https://monile-reapireds.netlify.app',
-  'http://localhost:3000',
-  'http://localhost:5173'
-];
+// Enable CORS
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || '*',
+  credentials: true
+}));
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Allow requests without origin (Postman, Mobile Apps, etc.)
-      if (!origin) return callback(null, true);
-
-      if (allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error(`CORS blocked for origin: ${origin}`));
-      }
-    },
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: [
-      'Origin',
-      'X-Requested-With',
-      'Content-Type',
-      'Accept',
-      'Authorization'
-    ]
-  })
-);
-
-// Handle Preflight Requests
-app.options('*', cors());
-
-// ==================== BODY PARSER ====================
+// Body parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ==================== REQUEST LOGGER ====================
+// Request logging middleware
 app.use((req, res, next) => {
   logger.info(`${req.method} ${req.url} - ${req.ip}`);
   next();
 });
 
-// ==================== RATE LIMITER ====================
+// Basic Rate Limiter
 const globalLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 10000,
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 10000, // increased for testing (was 100)
   standardHeaders: true,
   legacyHeaders: false,
   message: {
@@ -66,18 +38,18 @@ const globalLimiter = rateLimit({
     message: 'Too many requests from this IP, please try again after 15 minutes.'
   }
 });
-
 app.use(globalLimiter);
 
-// ==================== HEALTH CHECK ====================
+// Health check endpoint
 app.get('/health', async (req, res) => {
   try {
+    // Ping database
     await prisma.$queryRaw`SELECT 1`;
-
     const dbStatus = 'healthy';
-    const redisStatus = redis.isAvailable()
-      ? 'connected'
-      : 'fallback_memory';
+    
+    // Check Redis
+    const redisClient = redis.getClient();
+    const redisStatus = redis.isAvailable() ? 'connected' : 'fallback_memory';
 
     return successResponse(res, 'Server is running', {
       status: 'OK',
@@ -87,39 +59,34 @@ app.get('/health', async (req, res) => {
     });
   } catch (err) {
     logger.error('Health check failed:', err);
-
     return errorResponse(res, 'Health check failed', 500, {
       error: err.message
     });
   }
 });
 
-// ==================== ROUTES ====================
+// Import routes
 const authRoutes = require('./routes/auth.routes');
 const publicRoutes = require('./routes/public.routes');
 const adminRoutes = require('./routes/admin.routes');
 
+// Mount routes
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/public', publicRoutes);
 app.use('/api/v1/admin', adminRoutes);
 
-// ==================== 404 HANDLER ====================
+// Catch-all route handler for 404
 app.use((req, res) => {
   return errorResponse(res, 'Endpoint not found', 404);
 });
 
-// ==================== GLOBAL ERROR HANDLER ====================
+// Global Error Handler
 app.use((err, req, res, next) => {
   logger.error('Unhandled request error:', err);
-
-  return errorResponse(
-    res,
-    err.message || 'Internal server error',
-    err.status || 500
-  );
+  return errorResponse(res, err.message || 'Internal server error', err.status || 500);
 });
 
-// ==================== START SERVER ====================
+// Start the server
 const server = app.listen(PORT, () => {
   logger.info(`MPC Repairs Backend running on port ${PORT}`);
 });
