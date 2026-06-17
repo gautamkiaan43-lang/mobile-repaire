@@ -9,6 +9,7 @@ const { successResponse, errorResponse } = require('./utils/response');
 require('dotenv').config();
 
 const app = express();
+app.set('trust proxy', 1); // Trust first proxy (like Railway)
 const PORT = process.env.PORT || 5000;
 
 // Enable CORS
