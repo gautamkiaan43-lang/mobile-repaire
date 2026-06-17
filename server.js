@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 // Enable CORS
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || '*',
+  origin: ['https://monile-reapireds.netlify.app', 'http://localhost:5173'],
   credentials: true
 }));
 
